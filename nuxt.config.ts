@@ -36,13 +36,13 @@ export default defineNuxtConfig({
       posthogPublicKey: process.env.POSTHOG_PUBLIC_KEY || '',
       posthogHost: process.env.POSTHOG_HOST || 'https://us.i.posthog.com',
       gaMeasurementId: process.env.GA_MEASUREMENT_ID || '',
-      appUrl: process.env.SITE_URL || 'https://snake-game-47d.pages.dev',
+      appUrl: process.env.SITE_URL || 'https://snake.nardukapps.com',
       appName: process.env.APP_NAME || pkg.name || ''
     }
   },
 
   site: {
-    url: 'https://snake-game-47d.pages.dev',
+    url: 'https://snake.nardukapps.com',
     name: 'Snake Game'
   },
 
@@ -69,7 +69,7 @@ export default defineNuxtConfig({
         { property: 'og:title', content: 'Snake Game — Classic Browser Snake' },
         { property: 'og:description', content: 'Play the classic snake game in your browser. Eat, grow, don\'t crash.' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'https://snake-game-47d.pages.dev' },
+        { property: 'og:url', content: 'https://snake.nardukapps.com' },
         { property: 'og:site_name', content: 'Snake Game' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'Snake Game — Classic Browser Snake' },
@@ -77,7 +77,7 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#030712' }
       ],
       link: [
-        { rel: 'canonical', href: 'https://snake-game-47d.pages.dev' }
+        { rel: 'canonical', href: 'https://snake.nardukapps.com' }
       ]
     }
   }
