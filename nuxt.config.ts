@@ -57,5 +57,28 @@ export default defineNuxtConfig({
         target: 'esnext'
       }
     }
+  },
+
+  app: {
+    head: {
+      title: 'Snake Game — Classic Browser Snake',
+      htmlAttrs: { lang: 'en' },
+      meta: [
+        { name: 'description', content: 'Play the classic snake game in your browser. Eat, grow, don\'t crash. Built with Nuxt and deployed on Cloudflare Pages.' },
+        { name: 'keywords', content: 'snake game, browser game, classic snake, free online game, arcade game, nuxt game' },
+        { property: 'og:title', content: 'Snake Game — Classic Browser Snake' },
+        { property: 'og:description', content: 'Play the classic snake game in your browser. Eat, grow, don\'t crash.' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://snake-game-47d.pages.dev' },
+        { property: 'og:site_name', content: 'Snake Game' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'Snake Game — Classic Browser Snake' },
+        { name: 'twitter:description', content: 'Play the classic snake game in your browser. Eat, grow, don\'t crash.' },
+        { name: 'theme-color', content: '#030712' }
+      ],
+      link: [
+        { rel: 'canonical', href: 'https://snake-game-47d.pages.dev' }
+      ]
+    }
   }
 })
