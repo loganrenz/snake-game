@@ -1,0 +1,52 @@
+{
+  "name": "snake-game",
+  "type": "module",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "typecheck": "npx nuxt typecheck",
+    "deploy": "nuxt build && node scripts/patch-cf-process-proxy.mjs && wrangler pages deploy dist",
+    "setup": "npx jiti tools/setup-analytics.ts",
+    "setup:all": "npx jiti tools/setup-analytics.ts all",
+    "setup:status": "npx jiti tools/setup-analytics.ts status",
+    "setup:gsc": "npx jiti tools/setup-analytics.ts gsc",
+    "setup:gsc:verify": "npx jiti tools/setup-analytics.ts gsc:verify",
+    "setup:posthog": "npx jiti tools/setup-analytics.ts posthog",
+    "setup:ga": "npx jiti tools/setup-analytics.ts ga",
+    "gsc:init": "npx jiti tools/gsc-toolbox.ts init",
+    "gsc:verify": "npx jiti tools/gsc-toolbox.ts verify",
+    "gsc:submit": "npx jiti tools/gsc-toolbox.ts submit",
+    "doppler:dev": "doppler run -- nuxt dev",
+    "doppler:build": "doppler run -- nuxt build",
+    "doppler:setup": "doppler run -- npx jiti tools/setup-analytics.ts all",
+    "doppler:b64": "node scripts/doppler-b64-key.mjs",
+    "setup:new-app": "node scripts/setup-new-app.mjs"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^4.3.0",
+    "drizzle-orm": "^0.44.0",
+    "nanoid": "^5.1.5",
+    "nuxt": "^4.3.0",
+    "posthog-js": "^1.228.0",
+    "tailwindcss": "^4.1.18",
+    "vue": "^3.5.27",
+    "vue-router": "^4.6.4",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250620.0",
+    "@nuxt/fonts": "^0.11.4",
+    "@nuxtjs/robots": "^5.7.0",
+    "@nuxtjs/sitemap": "^7.6.0",
+    "@types/node": "^22.15.0",
+    "dotenv": "^17.2.4",
+    "drizzle-kit": "^0.31.0",
+    "googleapis": "^144.0.0",
+    "wrangler": "^4.20.0"
+  }
+}

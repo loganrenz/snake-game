@@ -1,0 +1,16 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/main/packages/wrangler/schemas/config/wrangler.json",
+  "name": "snake-game",
+  "pages_build_output_dir": "dist",
+  "compatibility_date": "2025-07-15",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "snake-game-db",
+      "database_id": "72890c6b-2b85-4798-be19-d2cf27ad488e"
+    }
+  ]
+}

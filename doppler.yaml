@@ -1,0 +1,3 @@
+# Doppler project for this app. Run: doppler run -- npm run dev
+project: snake-game
+config: dev_base
