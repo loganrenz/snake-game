@@ -10,7 +10,7 @@ export default defineNuxtPlugin(() => {
           '@context': 'https://schema.org',
           '@type': 'WebApplication',
           name: 'Snake Game',
-          url: 'https://snake-game.pages.dev',
+          url: 'https://snake-game-47d.pages.dev',
           description: 'Play the classic snake game in your browser. Eat, grow, don\'t crash. Built with Nuxt and deployed on Cloudflare Pages.',
           applicationCategory: 'GameApplication',
           operatingSystem: 'Web Browser',
